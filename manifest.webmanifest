@@ -4,7 +4,7 @@
   "start_url":"./",
   "display":"standalone",
   "background_color":"#f4f7fb",
-  "theme_color":"#1769ff",
+  "theme_color":"#0b2a5b",
   "dir":"rtl",
   "lang":"fa",
   "icons":[{"src":"logo.png","sizes":"any","type":"image/png","purpose":"any maskable"}]
