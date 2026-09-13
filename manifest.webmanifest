@@ -1,3 +1,11 @@
 {
-  "name":"کیف‌نت","short_name":"کیف‌نت","lang":"fa","dir":"rtl","start_url":"./","display":"standalone","background_color":"#f5f7fb","theme_color":"#0b2a5b","icons":[{"src":"logo.png","sizes":"1536x1536","type":"image/png"}]
+  "name":"کیف‌نت | مدیریت دخل و خرج",
+  "short_name":"کیف‌نت",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f4f7fb",
+  "theme_color":"#1769ff",
+  "dir":"rtl",
+  "lang":"fa",
+  "icons":[{"src":"logo.png","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
 }
