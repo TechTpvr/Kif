@@ -1,11 +1,14 @@
 {
-  "name":"کیف‌نت | مدیریت دخل و خرج",
+  "name":"کیف‌نت",
   "short_name":"کیف‌نت",
+  "description":"مدیریت دخل و خرج شخصی",
   "start_url":"./",
   "display":"standalone",
-  "background_color":"#f4f7fb",
-  "theme_color":"#1769ff",
   "dir":"rtl",
   "lang":"fa",
-  "icons":[{"src":"logo.png","sizes":"any","type":"image/png","purpose":"any maskable"}]
+  "background_color":"#f5f7fb",
+  "theme_color":"#0b3b82",
+  "icons":[
+    {"src":"./logo.png","sizes":"1536x1536","type":"image/png","purpose":"any maskable"}
+  ]
 }
