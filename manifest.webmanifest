@@ -7,5 +7,5 @@
   "theme_color":"#1769ff",
   "dir":"rtl",
   "lang":"fa",
-  "icons":[{"src":"logo.png","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+  "icons":[{"src":"logo.png","sizes":"any","type":"image/png","purpose":"any maskable"}]
 }
