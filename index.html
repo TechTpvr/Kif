@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b3b82">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#0b3b82">
 <meta name="description" content="کیف‌نت؛ مدیریت دخل و خرج شخصی">
-<title>کیف‌نت | مدیریت دخل و خرج — V4</title>
+<title>کیف‌نت | مدیریت دخل و خرج</title>
 <link rel="manifest" href="./manifest.webmanifest">
 <style>
 :root{
@@ -60,11 +60,11 @@ header.top{display:flex;align-items:center;justify-content:space-between;gap:12p
 .mini-stat span{font-size:11px;color:var(--muted)}.mini-stat b{font-size:18px;display:block;margin-top:6px}
 .progress{height:7px;background:var(--line);border-radius:20px;overflow:hidden;margin-top:10px}.progress i{display:block;height:100%;background:var(--p);border-radius:20px}
 .tx-list{display:flex;flex-direction:column;gap:8px}.tx{display:flex;align-items:center;gap:11px;padding:12px;background:var(--card);border:1px solid var(--line);border-radius:18px}
-.tx-icon{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:var(--bg);color:var(--p);font-size:18px;flex:none}
+.tx-icon{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:color-mix(in srgb,var(--p) 10%,var(--card));color:var(--p);font-size:18px;flex:none}
 .tx-main{min-width:0;flex:1}.tx-main b{font-size:13px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tx-main small{color:var(--muted);font-size:10px}
 .tx-amount{font-size:12px;font-weight:800;white-space:nowrap}.tx-amount.in{color:var(--success)}.tx-amount.out{color:var(--danger)}
 .empty{padding:28px;text-align:center;color:var(--muted);font-size:12px;background:var(--card);border:1px dashed var(--line);border-radius:18px}
-.bottom{position:fixed;z-index:40;bottom:0;left:0;right:0;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-top:1px solid var(--line);padding:8px max(10px,env(safe-area-inset-left)) calc(8px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(5,1fr)}
+.bottom{position:fixed;z-index:40;bottom:0;left:0;right:0;background:color-mix(in srgb,var(--card) 94%,transparent);backdrop-filter:blur(18px);border-top:1px solid var(--line);padding:8px max(10px,env(safe-area-inset-left)) calc(8px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(5,1fr)}
 .bottom button{background:none;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:4px;font-size:9px;padding:4px}
 .bottom button.active{color:var(--p);font-weight:800}.bottom svg{width:21px;height:21px}
 .page{display:none}.page.active{display:block}
@@ -84,13 +84,13 @@ header.top{display:flex;align-items:center;justify-content:space-between;gap:12p
 .row{display:flex;align-items:center;gap:10px}.row+.row{margin-top:9px}
 .list-card{display:flex;align-items:center;gap:11px;padding:12px;background:var(--card);border:1px solid var(--line);border-radius:18px;margin-bottom:8px}
 .list-card .grow{flex:1;min-width:0}.list-card b{font-size:13px;display:block}.list-card small{font-size:10px;color:var(--muted)}
-.badge{font-size:9px;padding:5px 8px;border-radius:9px;background:var(--bg);color:var(--p)}
+.badge{font-size:9px;padding:5px 8px;border-radius:9px;background:color-mix(in srgb,var(--p) 11%,var(--card));color:var(--p)}
 .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.kpi .card{padding:12px}.kpi b{font-size:14px;display:block;margin-top:4px}.kpi span{font-size:9px;color:var(--muted)}
 .chart{height:220px;display:flex;align-items:flex-end;gap:10px;padding:15px 7px 5px}.bar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px;height:100%}.bar i{display:block;width:70%;max-width:38px;background:var(--p);border-radius:9px 9px 4px 4px;min-height:4px}.bar small{font-size:9px;color:var(--muted)}
-.settings-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.setting-card{padding:15px;background:var(--card);border:1px solid var(--line);border-radius:20px;text-align:center}.setting-card button{width:100%;padding:12px;border-radius:13px;background:var(--bg);color:var(--text);margin-top:8px}.setting-card .gear{width:52px;height:52px;border-radius:16px;background:var(--bg);color:var(--p);display:grid;place-items:center;margin:0 auto}.gear svg{width:26px;height:26px}
+.settings-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.setting-card{padding:15px;background:var(--card);border:1px solid var(--line);border-radius:20px;text-align:center}.setting-card button{width:100%;padding:12px;border-radius:13px;background:var(--bg);color:var(--text);margin-top:8px}.setting-card .gear{width:52px;height:52px;border-radius:16px;background:color-mix(in srgb,var(--p) 12%,var(--card));color:var(--p);display:grid;place-items:center;margin:0 auto}.gear svg{width:26px;height:26px}
 body.dark{--bg:#0c1422;--card:#131e2f;--text:#eef4ff;--muted:#95a2b8;--line:#26344a;--shadow:0 14px 36px rgba(0,0,0,.2)}
 body.dark .splash-logo{filter:none}
-body.dark .icon-btn,body.dark .circle-btn,body.dark .back-btn{box-shadow:none}\nbody.dark .bottom{background:rgba(19,30,47,.94)}
+body.dark .icon-btn,body.dark .circle-btn,body.dark .back-btn{box-shadow:none}
 body.dark .balance{box-shadow:0 18px 42px rgba(0,0,0,.28)}
 .toast{position:fixed;z-index:200;left:50%;bottom:94px;transform:translateX(-50%) translateY(12px);background:#172033;color:#fff;padding:11px 15px;border-radius:13px;font-size:11px;opacity:0;pointer-events:none;transition:.25s}.toast.show{opacity:1;transform:translateX(-50%)}
 @media(min-width:700px){.modal{border-radius:28px;margin:auto}.bottom{left:50%;right:auto;transform:translateX(-50%);width:min(760px,100%);border:1px solid var(--line);border-radius:22px 22px 0 0}.app{padding-top:24px}}
@@ -275,7 +275,7 @@ body.dark .balance{box-shadow:0 18px 42px rgba(0,0,0,.28)}
 <script>
 const DEFAULT_CATS=["خوراک","خرید","اینترنت","حمل‌ونقل","قبض","پوشاک","تفریح","سلامت","آموزش","خانه","حقوق","فروش","هدیه","سایر"];
 const PALETTE=[["آبی","#0b3b82","#062a60"],["بنفش","#6d45d8","#4322a3"],["صورتی","#d23c82","#8e1f56"],["سبز","#16885f","#07563b"],["نارنجی","#d56a20","#8d3d08"],["قرمز","#c63b4b","#821f2d"],["فیروزه‌ای","#008b9a","#00515d"],["طلایی","#b28116","#72500a"]];
-let state=JSON.parse(localStorage.getItem("kifnet-v4-data")||localStorage.getItem("kifnet-v3-data")||"null")||{
+let state=JSON.parse(localStorage.getItem("kifnet-v3-data")||"null")||{
  accounts:[],tx:[],budgets:[],obligations:[],notes:[],categories:[...DEFAULT_CATS],
  theme:localStorage.getItem("kifnet-theme")||"light", color:Number(localStorage.getItem("kifnet-color")||0), balanceHidden:false
 };
@@ -284,7 +284,7 @@ let editTxId=null,editAccId=null,txType="expense";
 const $=id=>document.getElementById(id);
 const fa=n=>new Intl.NumberFormat("fa-IR").format(Math.round(Number(n)||0));
 const money=n=>fa(n)+" تومان";
-const save=()=>localStorage.setItem("kifnet-v4-data",JSON.stringify(state));
+const save=()=>localStorage.setItem("kifnet-v3-data",JSON.stringify(state));
 function nowDate(){return new Date().toISOString().slice(0,10)}
 function nowTime(){return new Date().toTimeString().slice(0,5)}
 function monthKey(d){return String(d||"").slice(0,7)}
@@ -379,7 +379,7 @@ function openAccount(id=null){
 }
 function deleteAccount(id){if(confirm("حساب حذف شود؟")){state.accounts=state.accounts.filter(a=>a.id!==id);state.tx.forEach(t=>{if(t.account===id)t.account=""});save();renderAll()}}
 function renderAccounts(){
- $("accountList").innerHTML=state.accounts.length?state.accounts.map(a=>{const live=Number(a.balance||0)+sum(state.tx.filter(t=>t.account===a.id).map(t=>t.type==="income"?Number(t.amount):-Number(t.amount)));return `<div class="list-card"><div class="tx-icon">💳</div><div class="grow"><b>${esc(a.name)}</b><small>${esc(a.type)}${a.card?" • •••• "+esc(a.card):""}</small></div><b>${fa(live)} تومان</b><button class="circle-btn" onclick="openAccount('${a.id}')">✎</button><button class="circle-btn" onclick="deleteAccount('${a.id}')">×</button></div>`}).join(""):`<div class="empty">حسابی ثبت نشده؛ از + اضافه کن</div>`;
+ $("accountList").innerHTML=state.accounts.length?state.accounts.map(a=>`<div class="list-card"><div class="tx-icon">💳</div><div class="grow"><b>${esc(a.name)}</b><small>${esc(a.type)}${a.card?" • •••• "+esc(a.card):""}</small></div><b>${fa(a.balance)} تومان</b><button class="circle-btn" onclick="openAccount('${a.id}')">✎</button><button class="circle-btn" onclick="deleteAccount('${a.id}')">×</button></div>`).join(""):`<div class="empty">حسابی ثبت نشده؛ از + اضافه کن</div>`;
 }
 function saveBudget(){
  const amount=Number($("budgetAmount").value.replace(/[^\d]/g,""));if(!amount)return toast("مبلغ معتبر وارد کن");
